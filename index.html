@@ -1,21 +1,21 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Brinderly — prototype</title>
+<title>Brinderly Prototype</title>
 <meta name="description" content="Brinderly connects retired professionals with museums, schools, students and young companies. Clickable prototype by Briage.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231F5A3B'/%3E%3Ctext x='32' y='44' font-family='Georgia' font-size='36' font-weight='700' fill='white' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230B3D66'/%3E%3Ctext x='32' y='44' font-family='Georgia' font-size='36' font-weight='700' fill='white' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#F4EFE6; --surface:#FFFFFF; --surface-2:#FBF8F3; --ink:#1E2621; --muted:#69716B; --line:#E5DED1;
-  --green:#1F5A3B; --green-2:#2E7A51; --green-soft:#E2EEE6;
-  --terra:#D4622F; --terra-soft:#FBE5D8; --terra-ink:#9A3F17;
-  --purple:#7B2D8B; --purple-soft:#F1E3F3; --blue:#1688C9;
-  --gold:#E2A41F; --danger:#B4412F; --danger-soft:#F8E1DC;
+  --bg:#F6F4EE; --surface:#FFFFFF; --surface-2:#FBFAF6; --ink:#1B2733; --muted:#5A6672; --line:#E3E0D6;
+  --green:#0B3D66; --green-2:#0F7C80; --green-soft:#E3EEF5;
+  --terra:#B35C00; --terra-soft:#FCEBCB; --terra-ink:#7A4300;
+  --purple:#0F7C80; --purple-soft:#DDF0F0; --blue:#0F7C80;
+  --gold:#F2B440; --danger:#B4412F; --danger-soft:#F8E1DC;
   --shadow:0 1px 2px rgba(30,38,33,.06),0 10px 28px rgba(30,38,33,.10);
   --radius:18px;
 }
@@ -27,7 +27,7 @@ h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:600;margin:0;letter-spac
 .ic{flex:none;vertical-align:middle}
 
 /* ---------- top bar ---------- */
-.topbar{position:sticky;top:0;z-index:50;display:flex;align-items:center;gap:14px;padding:10px 20px;background:rgba(244,239,230,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line);height:59px}
+.topbar{position:sticky;top:0;z-index:50;display:flex;align-items:center;gap:14px;padding:10px 20px;background:rgba(246,244,238,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line);height:59px}
 .brand{display:flex;align-items:center;gap:10px;font-family:Fraunces,serif;font-weight:700;font-size:22px;color:var(--green);text-decoration:none}
 .brand-mark{width:34px;height:34px;border-radius:10px;background:var(--green);display:grid;place-items:center;color:#fff;font-size:19px}
 .seg{display:flex;background:#fff;border:1px solid var(--line);border-radius:999px;padding:4px;gap:2px;margin-left:auto}
@@ -93,7 +93,7 @@ button.card:hover{transform:translateY(-1px);box-shadow:var(--shadow)}
 .badge{background:var(--terra);color:#fff;border-radius:999px;padding:1px 8px;font-size:12px;font-weight:700}
 .chips{display:flex;flex-wrap:wrap;gap:6px}
 .chip{display:inline-flex;align-items:center;gap:5px;background:var(--surface-2);border:1px solid var(--line);border-radius:999px;padding:4px 10px;font-size:13px;color:var(--ink)}
-.chip.hit{background:var(--green-soft);border-color:#BFD8C7;color:var(--green);font-weight:600}
+.chip.hit{background:var(--green-soft);border-color:#B9D2E3;color:var(--green);font-weight:600}
 .match{color:var(--green);font-weight:700;display:inline-flex;gap:4px;align-items:center}
 .responded{color:var(--green);font-weight:600;display:inline-flex;gap:4px;align-items:center}
 .verified{display:inline-flex;align-items:center;gap:4px;color:var(--green);font-weight:600}
@@ -115,8 +115,8 @@ button.card:hover{transform:translateY(-1px);box-shadow:var(--shadow)}
 .actions .btn{flex:1;padding:10px 8px;font-size:14px}
 
 .hero-card{border-radius:22px;padding:22px 20px;color:#fff;margin-bottom:6px;position:relative;overflow:hidden}
-.hero-card.creator{background:linear-gradient(135deg,#1F5A3B,#2E7A51)}
-.hero-card.pro{background:linear-gradient(135deg,#C9572A,#E07A3E)}
+.hero-card.creator{background:linear-gradient(135deg,#0B3D66,#0F6E78)}
+.hero-card.pro{background:linear-gradient(135deg,#9A4F00,#B86A10)}
 .hero-card::after{content:"";position:absolute;right:-40px;top:-40px;width:150px;height:150px;border-radius:50%;background:rgba(255,255,255,.08)}
 .hero-card h2{font-size:23px;line-height:1.2;margin:4px 0 8px}
 .hero-card p{margin:0 0 16px;opacity:.9;font-size:15px}
@@ -138,7 +138,7 @@ input:focus,textarea:focus,select:focus{outline:none;border-color:var(--green);b
 .seg-in button{flex:1;padding:10px 6px;border-radius:10px;border:1px solid var(--line);background:#fff;font-weight:600;font-size:14px;cursor:pointer}
 .seg-in button.on{background:var(--green-soft);border-color:var(--green);color:var(--green)}
 .upload{width:100%;display:flex;align-items:center;gap:8px;justify-content:center;padding:14px;border:1.5px dashed var(--line);border-radius:12px;background:#fff;cursor:pointer;font-weight:600;color:var(--muted)}
-.upload.done{border-style:solid;border-color:#BFD8C7;background:var(--green-soft);color:var(--green)}
+.upload.done{border-style:solid;border-color:#B9D2E3;background:var(--green-soft);color:var(--green)}
 .check{display:flex;gap:10px;align-items:flex-start;font-size:14px;margin:4px 0 8px}
 .check input{width:20px;height:20px;margin:1px 0 0;accent-color:var(--green);flex:none}
 
@@ -150,14 +150,14 @@ input:focus,textarea:focus,select:focus{outline:none;border-color:var(--green);b
 .step.done i{background:var(--green)}
 
 .applicant.declined{opacity:.55}
-.applicant.accepted,.applicant.completed{border-color:#9CC5A9;box-shadow:0 0 0 3px var(--green-soft)}
+.applicant.accepted,.applicant.completed{border-color:#8FB4CF;box-shadow:0 0 0 3px var(--green-soft)}
 .arrive{animation:arrive .6s ease}
 @keyframes arrive{from{opacity:0;transform:translateY(14px) scale(.98)}to{opacity:1;transform:none}}
 .waiting{text-align:center;padding:26px 16px;color:var(--muted)}
 .pulse{width:54px;height:54px;border-radius:50%;background:var(--green-soft);margin:0 auto 12px;display:grid;place-items:center;color:var(--green);position:relative}
 .pulse::before{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid var(--green);animation:ring 1.6s infinite}
 @keyframes ring{from{transform:scale(1);opacity:.7}to{transform:scale(1.8);opacity:0}}
-.matched{background:linear-gradient(135deg,#E2EEE6,#F2F7F3);border-color:#BFD8C7}
+.matched{background:linear-gradient(135deg,#E3EEF5,#F3F7FA);border-color:#B9D2E3}
 .matched h3{font-size:19px;margin:0 0 4px}
 .review-box{background:var(--surface-2);border-radius:12px;padding:12px 14px;margin-top:10px}
 .status-card{border-radius:14px;padding:14px;font-size:14px}
@@ -261,40 +261,40 @@ input:focus,textarea:focus,select:focus{outline:none;border-color:var(--green);b
    Data lives in localStorage, so two windows of the same
    browser stay in sync (e.g. creator + professional).
    ========================================================= */
-const KEY = 'brinderly-demo-v1';
+const KEY = 'brinderly-demo-v2';
 const CATS = ['Culture','Education','Students','Business'];
-const ME_ORG = {name:'Fondazione Aurora', type:'Community museum · Milan', initials:'FA', color:'#7B2D8B'};
+const ME_ORG = {name:'Marco Rossi', type:'History student · Milan', initials:'MR', color:'#0F7C80'};
 
 /* ---------- demo content (English, for the pitch) ---------- */
 const DEMO_TASK = {
-  title: "Help us tell the story of Milan's old trams",
-  category: 'Culture',
-  description: "We're preparing a small exhibition on Milan's public transport, 1950–1990. We're looking for someone with an engineering or local-history background to review our panel texts, share memories, and maybe give a 30-minute talk at the opening.",
-  skills: 'Engineering, Local history, Public speaking',
-  mode: 'In person',
-  location: 'Milan · Navigli',
-  duration: '~6 hours over 2 weeks',
-  reward: '€150 + museum membership'
+  title: "Feedback on my history thesis about post-war Milan",
+  category: 'Students',
+  description: "I'm writing my master's thesis on everyday life in Milan during the economic boom (1950s–60s). I'm looking for an experienced history teacher to read two chapters, suggest sources and help me sharpen my argument before I submit.",
+  skills: 'History, Local history, Writing, Mentoring',
+  mode: 'Hybrid',
+  location: 'Milan or video call',
+  duration: '~5 hours over 3 weeks',
+  reward: '€60'
 };
 const DEMO_PROFILE = {
-  name: 'Giulia Ferrari', age: '66', city: 'Milan',
-  former: 'Civil engineer — urban transport', years: '38',
-  skills: 'Engineering, Urban planning, Local history, Public speaking, Mentoring',
-  bio: "For 38 years I designed tram and metro lines for the city of Milan. Now that I'm retired, I'd love to share what I know with students, museums and anyone curious about how cities move."
+  name: 'Roberta Conti', age: '71', city: 'Milan',
+  former: 'History teacher (liceo)', years: '38',
+  skills: 'History, Local history, Writing, Mentoring, Public speaking',
+  bio: "I taught history in Milan for 38 years. Now that I'm retired, I'm looking for something meaningful to do — I'd love to help students, schools and museums with what I know."
 };
 const DEMO_RESPONSE = {
-  message: "Buongiorno! I spent 38 years designing tram and metro lines in Milan, and I still have photos and technical drawings from the 1970s. I'd be glad to review your panels and give a short talk at the opening.",
-  availability: 'Tue & Thu mornings, plus the opening evening'
+  message: "Ciao Marco! I taught history for 38 years and the economic boom was always my favourite topic — I even remember the end of it. I'd be glad to read your chapters and share some sources from my own library.",
+  availability: 'Weekday mornings, in Milan or by video call'
 };
-const DEMO_REVIEW = "Giulia brought the exhibition to life — her drawings and stories were the highlight of the opening. We'll definitely work with her again.";
+const DEMO_REVIEW = "Roberta turned my messy draft into a clear argument and found two sources I'd never have discovered. Grazie mille!";
 
 const SIM_APPLICANTS = [
-  {pid:'marco', delay:2600,
-   tram:"Buongiorno! I taught local history for 35 years and collected stories from families who worked on the trams. I could help make the panel texts more personal.",
-   generic:"Buongiorno! I taught history for 35 years and I'd be happy to help with this. Could we have a short call to discuss the details?",
+  {pid:'paolo', delay:2600,
+   thesis:"Hello Marco, I worked for 33 years at the city archive. I can't promise to be a historian, but I know exactly where the documents about the 1950s are kept.",
+   generic:"Buongiorno! I worked in archives for over 30 years and I'd be happy to help with this. Could we have a short call to discuss the details?",
    availability:'Mon–Wed afternoons'},
-  {pid:'roberto', delay:5400,
-   tram:"I managed a tram depot for 31 years — I know every model that ran between 1960 and 1995. Happy to check technical details and lend some original timetables.",
+  {pid:'franco', delay:5400,
+   thesis:"I taught Italian literature for 30 years and supervised many school research projects. Happy to help with structure and writing style.",
    generic:"Hello! I led teams for over 30 years and this sounds like something I can help with. I'm available to start next week.",
    availability:'Flexible, mornings preferred'}
 ];
@@ -305,42 +305,42 @@ function seedState(){
     seq: 100,
     proProfile: false,
     pros: {
-      marco:{id:'marco', name:'Marco Bianchi', age:71, city:'Milan', former:'History teacher (liceo)', years:35,
-        skills:['Local history','Writing','Teaching','Public speaking'],
-        bio:"Taught history for 35 years and wrote two booklets about Milan's neighbourhoods. I love helping young people discover the city's past.",
-        verified:true, color:'#1688C9', rating:4.9, reviewCount:12,
-        reviews:[{by:'Biblioteca Isola', stars:5, text:'Marco ran three local-history evenings for us. Warm, precise, and the room was full every time.', when:'Sep 2026'},
+      paolo:{id:'paolo', name:'Paolo Bianchi', age:69, city:'Milan', former:'City archivist', years:33,
+        skills:['Archiving','Local history','Research'],
+        bio:"Spent 33 years in the city archive. I love helping people find the document they didn't know existed.",
+        verified:true, color:'#0B3D66', rating:4.9, reviewCount:12,
+        reviews:[{by:'Biblioteca Isola', stars:5, text:'Paolo ran three local-history evenings for us. Warm, precise, and the room was full every time.', when:'Sep 2026'},
                  {by:'Chiara M., student', stars:5, text:'Helped me structure my thesis chapter on post-war Milan. Very generous with his time.', when:'Jul 2026'}]},
-      roberto:{id:'roberto', name:'Roberto Galli', age:68, city:'Milan', former:'Tram depot manager', years:31,
-        skills:['Engineering','Logistics','Local history','Team leadership'],
-        bio:'Spent my whole career keeping trams running. I enjoy explaining how things work — to kids and grown-ups alike.',
-        verified:true, color:'#2E7A51', rating:4.7, reviewCount:5,
-        reviews:[{by:'Istituto Tecnico Leonardo', stars:5, text:'Roberto gave our students a fantastic tour of how maintenance planning works.', when:'May 2026'}]},
+      franco:{id:'franco', name:'Franco Galli', age:68, city:'Milan', former:'Italian literature teacher', years:30,
+        skills:['Writing','Teaching','Mentoring'],
+        bio:'Thirty years teaching Italian literature. I enjoy helping young people find their own voice in writing.',
+        verified:true, color:'#0F7C80', rating:4.7, reviewCount:5,
+        reviews:[{by:'Istituto Tecnico Leonardo', stars:5, text:'Franco coached our students through their final research essays. Patient and inspiring.', when:'May 2026'}]},
       lucia:{id:'lucia', name:'Lucia Moretti', age:64, city:'Milan', former:'Museum conservator', years:30,
         skills:['Archiving','Local history','Photography'],
         bio:'Thirty years caring for photographic collections. Old pictures are my favourite puzzles.',
-        verified:true, color:'#C9572A', rating:5, reviewCount:8,
+        verified:true, color:'#7A4300', rating:5, reviewCount:8,
         reviews:[{by:'Fondazione Aurora', stars:5, text:'Lucia identified 40 photos we had no information about. Precise and a joy to work with.', when:'Oct 2026'}]}
     },
     tasks: [
-      {id:'t1', mine:true, org:ME_ORG.name, orgType:ME_ORG.type, initials:ME_ORG.initials, color:ME_ORG.color,
+      {id:'t1', mine:false, org:ME_ORG.name, orgType:ME_ORG.type, initials:ME_ORG.initials, color:ME_ORG.color,
        title:'Write captions for our post-war photo archive', category:'Culture',
        description:'About 60 photos of Milan from 1945–1960 need dates, places and short captions.',
        skills:['Archiving','Local history'], mode:'In person', location:'Milan · Navigli', duration:'4 hours', reward:'€80 + membership',
        createdAt:now-20*d, status:'completed',
        responses:[{id:'r1', proId:'lucia', message:'I worked with photo archives for 30 years — this is exactly my kind of puzzle.', availability:'Any weekday', status:'completed', at:now-19*d, seen:true}],
        review:{stars:5, text:'Lucia identified 40 photos we had no information about. Precise and a joy to work with.'}},
-      {id:'t2', org:'Istituto Tecnico Leonardo', orgType:'Secondary school · Turin', initials:'IL', color:'#1688C9',
+      {id:'t2', org:'Istituto Tecnico Leonardo', orgType:'Secondary school · Turin', initials:'IL', color:'#0B3D66',
        title:'Mock job interviews for final-year students', category:'Education',
        description:'Our 18-year-olds will soon apply for their first jobs and internships. We need experienced professionals to run 15-minute mock interviews over video and give honest, kind feedback.',
        skills:['Recruiting','Mentoring','Engineering'], mode:'Remote', location:'Video call', duration:'2 × 1 hour', reward:'Volunteer · certificate',
        createdAt:now-3*h, status:'open', responses:[]},
-      {id:'t3', org:'Chiara M.', orgType:'Law student · Bologna', initials:'CM', color:'#D4622F',
+      {id:'t3', org:'Chiara M.', orgType:'Law student · Bologna', initials:'CM', color:'#B35C00',
        title:'Feedback on my thesis about tenancy law', category:'Students',
        description:"I'm writing my master's thesis on residential tenancy disputes. I'd love a retired lawyer or judge to read two chapters and tell me what practitioners would think.",
        skills:['Law','Writing'], mode:'Remote', location:'Video call', duration:'3 hours', reward:'€40',
        createdAt:now-1*d, status:'open', responses:[]},
-      {id:'t4', org:'Pasta Lab', orgType:'Food startup · Rome', initials:'PL', color:'#2E7A51',
+      {id:'t4', org:'Pasta Lab', orgType:'Food startup · Rome', initials:'PL', color:'#0F7C80',
        title:'Help a young team set up their bookkeeping', category:'Business',
        description:"We're three founders who cook much better than we count. We need someone patient to help us organise invoices, VAT and a simple monthly routine.",
        skills:['Accounting','Mentoring'], mode:'Hybrid', location:'Rome or remote', duration:'5 hours over a month', reward:'€120 + lunch',
@@ -409,7 +409,7 @@ function match(t){
   const n = t.skills.filter(s => mine.includes(s.toLowerCase())).length;
   return n ? Math.min(98, 72 + n*9) : 0;
 }
-const isTramTask = t => /tram/i.test(t.title + ' ' + t.description);
+const isThesisTask = t => /thesis/i.test(t.title + ' ' + t.description);
 
 /* ---------- rendering infrastructure ---------- */
 const FORM_VIEWS = ['create','respond','onboard'];
@@ -424,7 +424,7 @@ function renderStage(){
   const panels = MODE === 'split' ? ['creator','pro'] : [MODE];
   st.innerHTML = panels.map(p => `
     <section class="device" data-panel="${p}">
-      <div class="device-label"><span class="dot" style="background:${p==='creator'?'var(--green)':'var(--terra)'}"></span>${p==='creator'?'Task creator · Fondazione Aurora':'Retired professional'}</div>
+      <div class="device-label"><span class="dot" style="background:${p==='creator'?'var(--green)':'var(--terra)'}"></span>${p==='creator'?'Task creator · Marco, student':'Retired professional'}</div>
       <div class="phone"><div class="screen"></div><div class="modal-host"></div><div class="toasts"></div></div>
     </section>`).join('');
   panels.forEach(p => renderPanel(p));
@@ -503,12 +503,13 @@ function cHome(){
   return `<header class="appbar">${avatar(ME_ORG.name, ME_ORG.color, 40, ME_ORG.initials)}<div class="ab-text"><div class="ab-title">${ME_ORG.name}</div><div class="ab-sub">${ME_ORG.type}</div></div></header>
   <div class="content">
     <div class="hero-card creator">
-      <div class="eyebrow">Brinderly for organisations</div>
+      <div class="eyebrow">Brinderly for students &amp; organisations</div>
       <h2>Need decades of experience for a small job?</h2>
       <p>Post a task — verified retired professionals near you will respond.</p>
       <button class="btn btn-light" data-act="c-new">${ic('plus')} Create a task</button>
     </div>
     <h3 class="section-h">Your tasks</h3>
+    ${mine.length ? '' : '<div class="waiting">No tasks yet — create your first one above.</div>'}
     ${mine.map(t => {
       const n = t.responses.length, newN = t.responses.filter(r => !r.seen).length;
       return `<button class="card task-card" data-act="c-open" data-id="${t.id}">
@@ -815,7 +816,7 @@ function requireFields(form, names){
 const panelForm = (panel, id) => document.querySelector(`.device[data-panel="${panel}"] #${id}`);
 function setUploaded(panel){
   const b = document.querySelector(`.device[data-panel="${panel}"] .upload`);
-  if(b){ b.classList.add('done'); b.innerHTML = `${ic('check')} <span>CV_Giulia_Ferrari.pdf</span>`; }
+  if(b){ b.classList.add('done'); b.innerHTML = `${ic('check')} <span>CV_Roberta_Conti.pdf</span>`; }
 }
 
 /* ---------- simulated applicants ---------- */
@@ -824,7 +825,7 @@ function scheduleApplicants(id){
     timers.push(setTimeout(() => {
       const t = task(id);
       if(!t || t.status !== 'open' || t.responses.some(r => r.proId === a.pid)) return;
-      const r = {id:'r' + (++S.seq), proId:a.pid, message: isTramTask(t) ? a.tram : a.generic, availability:a.availability, status:'pending', at:Date.now(), seen:false};
+      const r = {id:'r' + (++S.seq), proId:a.pid, message: isThesisTask(t) ? a.thesis : a.generic, availability:a.availability, status:'pending', at:Date.now(), seen:false};
       t.responses.push(r);
       if(UI.creator.view === 'task' && UI.creator.taskId === id) r.seen = true;
       commit(null);
@@ -837,7 +838,6 @@ function scheduleApplicants(id){
 /* ---------- actions ---------- */
 const A = {
   reset(){
-    if(!confirm('Reset the demo? All created tasks, responses and the profile will be cleared.')) return;
     timers.forEach(clearTimeout); timers = [];
     S = seedState(); save(); resetUI(); renderStage();
   },
@@ -932,7 +932,7 @@ const A = {
     const d = readForm(f);
     S.pros.giulia = {id:'giulia', name:d.name.trim(), age:d.age.trim(), city:d.city.trim(), former:d.former.trim(), years:d.years.trim(),
       skills:(d.skills || '').split(',').map(s => s.trim()).filter(Boolean), bio:d.bio.trim(),
-      verified:false, color:'#D4622F', rating:0, reviewCount:0, reviews:[]};
+      verified:false, color:'#B35C00', rating:0, reviewCount:0, reviews:[]};
     S.proProfile = true;
     UI.pro = {view:'feed', filter:'All'};
     commit('pro');
